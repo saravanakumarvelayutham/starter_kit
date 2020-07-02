@@ -1,5 +1,5 @@
-const Token = artifacts.require("Token");
-const EthSwap = artifacts.require("EthSwap");
+const Token = artifacts.require("./Token.sol");
+const EthSwap = artifacts.require("./EthSwap");
 
 //reference from DApp University Tutorial
 
