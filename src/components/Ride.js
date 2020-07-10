@@ -86,7 +86,7 @@ class Ride extends Component {
                             this.props.giveRide(event.target.name)
                           }}
                         >
-                          Give Ride
+                          Pay Ride
                         </button>
                       : null
                     }
