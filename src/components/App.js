@@ -82,7 +82,8 @@ class App extends Component {
       ethSwap: {},
       ethBalance: '0',
       tokenBalance: '0',
-      loading: true
+      loading: true,
+      currentForm: ''
     }
   }
 
