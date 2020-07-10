@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Web3 from 'web3'
 import ShareItRide from '../abis/ShareItRide.json'
+import Ride from './Ride';
 
 class Rides extends Component {
 
