@@ -65,8 +65,8 @@ class Ride extends Component {
                   <td>{ride.start}</td>
                   <td>{ride.end}</td>
                   <td>{window.web3.utils.fromWei(ride.price.toString(), 'ether')} SHR</td>
-                  <td>{ride.booked}</td>
-                  <td>{ride.paid}</td>
+                  <td>{ride.booked ? 'Yes' : 'No'}</td>
+                  <td>{ride.paid ? 'Yes' : 'No' }</td>
                   <td>
                     { !ride.booked
                       ? <button
