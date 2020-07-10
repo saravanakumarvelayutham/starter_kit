@@ -87,7 +87,7 @@ class Ride extends Component {
                           name={ride.id}
                           value={ride.price}
                           onClick={(event) => {
-                            this.props.giveRide(event.target.name)
+                            this.props.payRide(event.target.name)
                           }}
                         >
                           Pay Ride
