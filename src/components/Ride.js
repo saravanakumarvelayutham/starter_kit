@@ -62,7 +62,7 @@ class Ride extends Component {
                   <th scope="row">{ride.id.toString()}</th>
                   <td>{ride.start}</td>
                   <td>{ride.end}</td>
-                  <td>{window.web3.utils.fromWei(ride.price.toString(), 'Ether')} Eth</td>
+                  <td>{window.web3.utils.fromWei(ride.price.toString(), 'finney')} SHR</td>
                   <td>
                     { !ride.booked
                       ? <button
