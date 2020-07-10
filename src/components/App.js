@@ -115,7 +115,15 @@ class App extends Component {
                 this.setState({ mainForm: 'swap' })
               }}
             >
-            Buy
+            Swap
+        </button>
+        <button
+              className="btn btn-light margindownbtn"
+              onClick={(event) => {
+                this.setState({ mainForm: 'ride' })
+              }}
+            >
+            Ride
         </button>
         <div className="container-fluid mt-5">
           <div className="row">
