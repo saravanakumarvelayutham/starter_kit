@@ -41,7 +41,7 @@ class SellForm extends Component {
           <div className="input-group-append">
             <div className="input-group-text">
               <img src={tokenLogo} height='32' alt=""/>
-              &nbsp; DApp
+              &nbsp; SHR
             </div>
           </div>
         </div>
