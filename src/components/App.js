@@ -92,7 +92,7 @@ class App extends Component {
     if(this.state.loading) {
       content = <p id="loader" className="text-center">Loading...</p>
     } else {
-      if(this.state.mainForm == 'swap')
+      if(this.state.mainForm === 'swap')
       {
       content = <Main
         ethBalance={this.state.ethBalance}
@@ -110,7 +110,7 @@ class App extends Component {
       <div>
         <Navbar account={this.state.account} />
         <button
-              className="btn btn-light"
+              className="btn btn-light margindownbtn"
               onClick={(event) => {
                 this.setState({ mainForm: 'swap' })
               }}
