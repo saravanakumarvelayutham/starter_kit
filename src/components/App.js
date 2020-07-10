@@ -83,7 +83,7 @@ class App extends Component {
       ethBalance: '0',
       tokenBalance: '0',
       loading: true,
-      currentForm: ''
+      mainForm: ''
     }
   }
 
@@ -105,7 +105,7 @@ class App extends Component {
         <Navbar account={this.state.account} />
         <button className="margindownbtn btn btn-light"
               onClick={(event) => {
-                this.setState({ currentForm: 'swap' })
+                this.setState({ mainForm: 'swap' })
               }}
             >
             Swap
