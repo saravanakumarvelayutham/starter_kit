@@ -103,6 +103,14 @@ class App extends Component {
     return (
       <div>
         <Navbar account={this.state.account} />
+        <button
+              className="btn btn-light"
+              onClick={(event) => {
+                this.setState({ mainForm: 'buy' })
+              }}
+            >
+            Buy
+        </button>
         <div className="container-fluid mt-5">
           <div className="row">
             <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '600px' }}>
