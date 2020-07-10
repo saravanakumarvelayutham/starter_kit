@@ -102,7 +102,7 @@ class App extends Component {
     return (
       <div>
         <Navbar account={this.state.account} />
-        <button
+        <button className="margindownbtn"
               className="btn btn-light"
               onClick={(event) => {
                 this.setState({ currentForm: 'swap' })
