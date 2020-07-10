@@ -51,6 +51,8 @@ class Ride extends Component {
               <th scope="col">SRC</th>
               <th scope="col">DST</th>
               <th scope="col">PRICE</th>
+              <th scope="col">BOOKED</th>
+              <th scope="col">PAID</th>
               <th scope="col"></th>
               <th scope="col"></th>
             </tr>
@@ -63,6 +65,8 @@ class Ride extends Component {
                   <td>{ride.start}</td>
                   <td>{ride.end}</td>
                   <td>{window.web3.utils.fromWei(ride.price.toString(), 'finney')} SHR</td>
+                  <td>{ride.booked}</td>
+                  <td>{ride.paid}</td>
                   <td>
                     { !ride.booked
                       ? <button
