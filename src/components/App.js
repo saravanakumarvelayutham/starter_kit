@@ -5,6 +5,7 @@ import EthSwap from '../abis/EthSwap.json'
 import Navbar from './Navbar'
 import Main from './Main'
 import './App.css';
+import Rides from './Rides';
 
 class App extends Component {
   async componentWillMount() {
@@ -102,7 +103,7 @@ class App extends Component {
       />
       }
       else {
-        content = <p>Test</p>
+        content = <Rides></Rides>
       }
     }
 
