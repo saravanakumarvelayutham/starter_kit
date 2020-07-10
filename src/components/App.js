@@ -92,12 +92,18 @@ class App extends Component {
     if(this.state.loading) {
       content = <p id="loader" className="text-center">Loading...</p>
     } else {
+      if(this.state.mainForm == 'swap')
+      {
       content = <Main
         ethBalance={this.state.ethBalance}
         tokenBalance={this.state.tokenBalance}
         buyTokens={this.buyTokens}
         sellTokens={this.sellTokens}
       />
+      }
+      else {
+        content = <p>Test</p>
+      }
     }
 
     return (
@@ -106,7 +112,7 @@ class App extends Component {
         <button
               className="btn btn-light"
               onClick={(event) => {
-                this.setState({ mainForm: 'buy' })
+                this.setState({ mainForm: 'swap' })
               }}
             >
             Buy
