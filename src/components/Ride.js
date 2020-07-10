@@ -43,7 +43,7 @@ class Ride extends Component {
           <button type="submit" className="btn btn-primary">Request Ride</button>
         </form>
         <p>&nbsp;</p>
-        <h2>Give Ride</h2>
+        <h2>Manage Ride</h2>
         <table className="table">
           <thead>
             <tr>
